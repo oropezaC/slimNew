@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "angular",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "watchify cliente/app.js -o public/build.js",
+    "build-js-min": "browserify -g uglifyify cliente/app.js > public/build.min.js"
+  },
+  "author": "yahir oropeza",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular-utils-pagination": "^0.11.1",
+    "checklist-model": "^0.11.0",
+    "rmodal": "^1.0.24"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.7.0"
+  }
+}
